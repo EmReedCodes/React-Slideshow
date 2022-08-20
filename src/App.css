@@ -3,3 +3,8 @@
   width: 100%;
   color: red;
 }
+
+.capital {
+  font-size: 50px;
+  vertical-align: middle;
+}
