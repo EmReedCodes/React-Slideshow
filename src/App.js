@@ -16,27 +16,32 @@ function App() {
       modules={[Navigation, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
+      centeredSlides={true}
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+ 
     >
       
-      <SwiperSlide>
-        <div className="slide">
-        <h3>What the heck is MVC?</h3>
-        <img src="https://media.giphy.com/media/3o6MbbwX2g2GA4MUus/giphy.gif" 
-        alt="Homer Simpson frantically searching through book gif" 
-        />
-        </div>
-        </SwiperSlide>
+      
         <SwiperSlide>
-        <div className="slide">
-          <h2><span className="capital">M</span><span>odel</span></h2>
-          <h2><span className='capital'>V</span><span>iews</span></h2>
-          <h2><span className="capital">C</span><span>ontroller</span></h2>
-        </div>
-        </SwiperSlide>
+          <div className="slide">
+          <h3>What the heck is MVC?</h3>
+          <img src="https://media.giphy.com/media/3o6MbbwX2g2GA4MUus/giphy.gif"
+          alt="Homer Simpson frantically searching through book gif"
+          />
+          </div>
+          </SwiperSlide>
+          <SwiperSlide>
+          <div className="slide">
+            <div className="stackLetters">
+              <h2><span className="capital">M</span><span>odel</span></h2>
+              <h2><span className='capital'>V</span><span>iews</span></h2>
+              <h2><span className="capital">C</span><span>ontroller</span></h2>
+            </div>
+          </div>
+          </SwiperSlide>
         <SwiperSlide>
         <div className="slide">
           <p>Let's do a little throw back! Remember a little something called seperation of concern? The idea that each module or layer in an application should only be responsible for one thing. </p>
