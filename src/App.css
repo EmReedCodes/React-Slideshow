@@ -1,16 +1,13 @@
 
 
 .capital {
-  font-size: 50px;
+  font-size: 5em;
   vertical-align: middle;
+  letter-spacing: 1rem;
 }
 
-.stackLetters {
-  height: 100%;
-}
-
-.stackLetters h2 {
-  align-items: center;
+p {
+  width: 80%;
 }
 
 /* .swiper-wrapper {
@@ -76,11 +73,24 @@ border: 2px solid blue;
   border: 2px solid red;
   width: 70%;
   height: 600px;
-  /* display: flex;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
   flex-direction: column;
-  align-items: center; */
+}
+
+.imgContain {
+  max-height: 80%;
+}
+
+.imgContain img {
+  height: 80%;
+  max-width: 100%;
 }
 
 .slide img {
   width: fit-content;
 }
+
+
