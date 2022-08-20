@@ -80,6 +80,14 @@ border: 2px solid blue;
   flex-direction: column;
 }
 
+.advantage {
+  line-height: 3em;
+}
+
+.advantage h2 {
+  font-size: 5rem;
+}
+
 .imgContain {
   max-height: 80%;
 }

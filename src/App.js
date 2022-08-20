@@ -108,6 +108,7 @@ function App() {
         <div className="imgContain">
           <img src={IMAGES.controllerTodo}
            alt="snippet of ejs code"
+           srcSet=''
            />
         </div>
          <p>Once its's finished we get our promise back that the data has arrived and we can now update our Views to render the new item we added.</p>
@@ -125,36 +126,63 @@ function App() {
         </SwiperSlide>
         <SwiperSlide>
         <div className="slide">
-        <p>A Mongoose Model defines the interface for interacting with our DB. The model is what handles the reading, creating, updating, and deleting of documents.</p>
-        
+      
         <div className="imgContain">
-          <img src={IMAGES.modelMVC}
+          <img src="https://media.giphy.com/media/gh0lZ8iSGWLdMHrrBP/giphy.gif"
            alt="snippet of ejs code"
            />
         </div>
-        <p>A schema answers the the question, "What will the data in the mongoDB collection look like?"</p>
+        <p>So MVC sounds great but is there really that much benefit to implement it into my projects?</p>
         </div>
         </SwiperSlide>
         <SwiperSlide>
         <div className="slide">
-        <img src={IMAGES.imageOne}
-         alt="" 
-         />
+          
+        <div className="advantage">
+          <h2>Advantages:</h2>
+          <h4>Faster Development Process</h4>
+          <h4>Ability To Provide Multiple Views</h4>
+          <h4>Support for Async Technique</h4>
+          <h4>Modification Does Not Affect Entire Model</h4>
+          <h4>Returns Data Without Formatting</h4>
+          <h4>SEO Friendly Development</h4>
+        </div>
         </div>
         </SwiperSlide>
-      <SwiperSlide>
-        <div className="slide">Does
+        <SwiperSlide>
+        <div className="slide">
+          
+        <div className="advantage">
+          <h2>Disadvantages:</h2>
+          <h4>Manipulation of Dom Cost Time</h4>
+          <h4>Views Can Get Overburdened</h4>
+          <h4>No Formal Validation Support</h4>
+          <h4>Isolated Deployment Can Get Complicated</h4>
+        </div>
         </div>
         </SwiperSlide>
-      <SwiperSlide>
-        <div className="slide">This
+        <SwiperSlide>
+        <div className="slide">
+        <p>Doesn't this nice organized file setup make the pros outweight the cons?</p>
+        <div className="imgContain">
+          <img src={IMAGES.fileSetup}
+           alt="snippet of ejs code"
+           />
+        </div>
+        <p>I sure think so!</p>
         </div>
         </SwiperSlide>
-      <SwiperSlide>
-        <div className="slide">Work
+        <SwiperSlide>
+        <div className="slide">
+        <p>I hope you enjoyed my slideshow!</p>
+        <div className="imgContain">
+          <img src="https://media.giphy.com/media/EPQfELrp20REY/giphy.gif"
+           alt="snippet of ejs code"
+           />
+        </div>
+        <h3>Created by: Emily Reed</h3>
         </div>
         </SwiperSlide>
-
     </Swiper>
   );
 }
