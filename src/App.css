@@ -80,6 +80,31 @@ p {
 
 }
 
+@media screen and (min-width: 400px) {
+  .slide {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 400px) {
+
+  .imgContent {
+    max-width: 100%;
+  }
+   img {
+    height: fit-content;
+    max-width: 100%;
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+} */
 
 
 
