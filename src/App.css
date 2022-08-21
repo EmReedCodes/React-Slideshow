@@ -82,12 +82,14 @@ p {
 }
 
 
+
 @media screen and (max-width: 450px) {
+
   .swiper-wrapper {
     height: 100%;
   }
   .advantage h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .slide {
@@ -100,10 +102,6 @@ p {
   }
 
 
-
-}
-
-@media screen and (max-width: 450px) {
   .swiper {
     height: 100%;
   }
@@ -113,6 +111,10 @@ p {
    img {
     height: fit-content;
     max-width: 100%;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
  
 }
