@@ -1,6 +1,6 @@
 // //root component 
-//import { useRef } from "react";
-import { Navigation, Pagination } from 'swiper';
+
+import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import IMAGES from './assets';
 
@@ -8,29 +8,37 @@ import './App.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+// import 'swiper/css/effect-flip'
+import 'swiper/css/a11y'
 
 function App() {
+
+
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, A11y]}
       spaceBetween={50}
       slidesPerView={1}
       centeredSlides={true}
       navigation
       pagination={{ clickable: true }}
+      // effect= {"fade"}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+      a11y= {true}
  
     >
       
       
         <SwiperSlide>
           <div className="slide">
-          <h3>What the heck is MVC?</h3>
-          <img src="https://media.giphy.com/media/3o6MbbwX2g2GA4MUus/giphy.gif"
-          alt="Homer Simpson frantically searching through book gif"
-          />
+          <h1>What the heck is MVC?</h1>
+          <div className="imgContain">
+            <img src="https://media.giphy.com/media/3o6MbbwX2g2GA4MUus/giphy.gif"
+            alt="Homer Simpson frantically searching through book gif"
+            />
+          </div>
           </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -43,8 +51,12 @@ function App() {
         <SwiperSlide>
         <div className="slide">
           <p>Let's do a little throw back! Remember a little something called seperation of concern? The idea that each module or layer in an application should only be responsible for one thing. </p>
-          <img src="https://media.giphy.com/media/xT5LMXD12I3SdzfRcI/giphy.gif" 
-          alt="Simpson character Millhouse's mom knocking on door" srcset="" />
+          <div className="imgContain">
+            <img src="https://media.giphy.com/media/xT5LMXD12I3SdzfRcI/giphy.gif"
+            alt="Simpson character Millhouse's mom knocking on door"
+            srcset=""
+            />
+          </div>
           <p>Well MVC is based on a similar concept. An architecture designed to keep our back end more readable and easy to change.</p>
         </div>
         </SwiperSlide>
@@ -60,17 +72,22 @@ function App() {
         </SwiperSlide>
         <SwiperSlide>
         <div className="slide">
-        <img src={IMAGES.viewMVC}
-         alt="snippet of ejs code" 
-         />
+        <div className="imgContain">
+          <img src={IMAGES.viewMVC}
+           alt="snippet of ejs code"
+           />
+        </div>
          <p>The View is the part that that will get compiled using a templating engine for the user to see on the browser. We can update data in Views using the Model.</p>
         </div>
         </SwiperSlide>
         <SwiperSlide>
         <div className="slide">
-        <img src={IMAGES.controllerMVC}
-         alt="snippet of ejs code" 
-         />
+        <div className="imgContain">
+          <img src={IMAGES.controllerMVC}
+           alt="snippet of ejs code"
+           srcset=""
+           />
+        </div>
          <p>The Controller is the logic that controls and responds to the action the user performs from the views.</p>
         </div>
         </SwiperSlide>
@@ -122,6 +139,17 @@ function App() {
            alt="snippet of ejs code"
            />
         </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="slide">
+        <p>A model provides an interface to MongoDB for CRUD actions.</p>
+        <div className="imgContain">
+          <img src={IMAGES.mongooseEx}
+           alt="snippet of ejs code"
+           />
+        </div>
+        <p>While the schema is what defines the structure of the document.</p>
         </div>
         </SwiperSlide>
         <SwiperSlide>

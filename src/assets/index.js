@@ -8,7 +8,8 @@ const IMAGES = {
     controllerTodo: require('./controllerTodo.png'),
     mongooseMeme : require('./mongoose.jpg'),
     vrcMeme : require('./vrcMeme.jpg'),
-    fileSetup : require('./filesetup.jpg')
+    fileSetup : require('./filesetup.jpg'),
+    mongooseEx : require('./exampleMongoose.png')
 }
 
 export default IMAGES
